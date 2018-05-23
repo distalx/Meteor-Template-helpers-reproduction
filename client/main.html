@@ -1,0 +1,58 @@
+<head>
+  <title>helper-issue</title>
+</head>
+
+<body>
+  <h4>many to many</h4>
+
+  {{> many_to_many}}
+
+  <!-- <h4>two values</h4>
+  {{> two_values}} -->
+</body>
+
+<template name="many_to_many">
+
+
+  <p>
+    <b>"compare" 4 'gte' 1 '&&' 4 'lte'  6</b><br><br>
+
+    {{compare 4 'gte' 1 '&&' 4 'lte' 6}}
+  </p>
+
+  <p>
+
+    <b>"compare" 4 'gte' 7 '&&' 4 'lte'  8</b><br><br>
+
+    {{compare 4 'gte' 7 '&&' 4 'lte' 8}}
+  </p>
+
+  <p>
+    <b>"compare" 4 'gte' 9 '&&' 4 'lte'  10</b><br><br>
+
+    {{compare 4 'gte' 9 '&&' 4 'lte' 10}}
+  </p>
+
+
+</template>
+
+
+<template name="two_values">
+
+
+  <p>
+    <b>"compare" 4 'gte' 1 </b><br><br>
+
+    {{compare 4 'gte' 1 }}
+  </p>
+
+  <p>
+
+    <b>"compare" 4 'gte' 7 </b><br><br>
+
+    {{compare 4 'gte' 7 }}
+  </p>
+
+
+
+</template>
